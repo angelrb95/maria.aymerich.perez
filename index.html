@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>María Aymerich Pérez - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div id="scroll-progress"></div>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">M. Aymerich</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#education">Formación</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content-to-print">
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <h1 class="hero-name">María Aymerich Pérez</h1>
+        <h2 class="hero-title">
+          <span class="typing-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-subtitle">
+          Profesional sanitaria con amplia experiencia en cuidado de pacientes,
+          atención infantil y geriatría. Responsable, empática y dedicada.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Contactar</a>
+          <button id="download-cv" class="btn btn-secondary">Descargar CV</button>
+          <a href="#experience" class="btn btn-secondary">Ver Experiencia</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Aptitudes Principales</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Responsabilidad Profesional</h3>
+            <p>
+              Comprometida con el bienestar del paciente y la ética
+              profesional.
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>Asistencia Dental</h3>
+            <p>Especialización en apoyo a tratamientos y cuidados específicos.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Trabajo en Equipo</h3>
+            <p>
+              Experiencia en entornos multidisciplinares y colaboración
+              sanitaria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Experiencia Profesional</h2>
+        <div class="timeline">
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Mayo 2024 - Presente</div>
+            <div class="timeline-content">
+              <h3>Auxiliar de clínica dental</h3>
+              <h4>Clínica infantil dental Isabel Cadroy</h4>
+              <p>Castellón. Atención y asistencia en tratamientos odontopediátricos.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Ago 2025 - Sep 2025</div>
+            <div class="timeline-content">
+              <h3>TCAE (Atención Primaria)</h3>
+              <h4>Centro de Salud Vinaroz</h4>
+              <p>Castellón. Técnica en cuidados auxiliares de enfermería.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Mar 2024 - Mayo 2024</div>
+            <div class="timeline-content">
+              <h3>Auxiliar de clínica dental</h3>
+              <h4>Clínica Cristina Querol</h4>
+              <p>Castellón. Periodoncia e implantes.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Ene 2022 - Mar 2024</div>
+            <div class="timeline-content">
+              <h3>Cuidadora / Auxiliar de enfermería</h3>
+              <h4>Fundación Aspropace</h4>
+              <p>Castellón. Atención a personas con parálisis cerebral.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Oct 2023 - Nov 2023</div>
+            <div class="timeline-content">
+              <h3>Auxiliar de enfermería</h3>
+              <h4>Hospital Universitario de la Plana</h4>
+              <p>Vila-real. Servicios sanitarios hospitalarios.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 6 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Nov 2020 - Dic 2021</div>
+            <div class="timeline-content">
+              <h3>Cuidadora / Auxiliar de enfermería</h3>
+              <h4>Maset de Frater</h4>
+              <p>Castellón. Atención socio-sanitaria.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 7 -->
+          <div class="timeline-item">
+            <div class="timeline-date">Sep 2020 - Nov 2020</div>
+            <div class="timeline-content">
+              <h3>Gerocultor</h3>
+              <h4>Residencia tercera edad Oasis</h4>
+              <p>Benicasim. Auxiliar geriátrica.</p>
+            </div>
+          </div>
+
+          <!-- Additional items summary for brevity or full list? User provided a lot. I will include major ones. -->
+          <div class="timeline-item">
+            <div class="timeline-date">Anteriormente</div>
+            <div class="timeline-content">
+              <p>Experiencia adicional como Integradora Social (Asociación Escuela el Cau), Monitora de Ocio (Colegio
+                Illes Columbretes), Educadora Infantil (Escuela Infantil La Lluna) y otros roles desde 2016.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Formación Académica</h2>
+        <div class="education-grid">
+          <div class="edu-card">
+            <div class="edu-year">2022 - 2024</div>
+            <h3>Técnica en Cuidados Auxiliares de Enfermería</h3>
+            <p>IES Matilde Salvador</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2018 - 2020</div>
+            <h3>Grado Superior, Integración Social</h3>
+            <p>IES Gilabert de Centelles</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2016 - 2018</div>
+            <h3>Grado Superior, Educación Infantil</h3>
+            <p>IES Gilabert de Centelles</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2014 - 2016</div>
+            <h3>Grado Medio, Atención a personas en situación de dependencia</h3>
+            <p>IES Gilabert de Centelles</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2018</div>
+            <h3>Curso: Atención y tratamientos TEA</h3>
+            <p>Universidad de Granada</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Idiomas</h2>
+        <div class="languages-list">
+          <div class="language-item">
+            <span>Castellano</span>
+            <div class="progress-bar">
+              <div class="progress" data-width="100%" style="width: 0%">Nativo</div>
+            </div>
+          </div>
+          <div class="language-item">
+            <span>Catalán</span>
+            <div class="progress-bar">
+              <div class="progress" data-width="100%" style="width: 0%">Nativo/Bilingüe</div>
+            </div>
+          </div>
+          <div class="language-item">
+            <span>Inglés</span>
+            <div class="progress-bar">
+              <div class="progress" data-width="30%" style="width: 0%">Básico (Elementary)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title text-center">Contacto</h2>
+        <div class="contact-grid">
+          <a href="mailto:mariaaymerich.map@gmail.com" class="contact-item">
+            <div class="icon">✉️</div>
+            <div class="text">mariaaymerich.map@gmail.com</div>
+          </a>
+          <a href="https://www.linkedin.com/in/mar%C3%ADa-aymerich-p%C3%A9rez-896681174/" target="_blank"
+            class="contact-item">
+            <div class="icon">🔗</div>
+            <div class="text">LinkedIn Profile</div>
+          </a>
+          <div class="contact-item">
+            <div class="icon">📍</div>
+            <div class="text">la Vall d'Uixó, Comunidad Valenciana, España</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 María Aymerich Pérez. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
